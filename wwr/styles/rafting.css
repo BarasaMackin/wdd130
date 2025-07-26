@@ -35,13 +35,87 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+footer nav.social.media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-.socialmedia a img {
-    width: 24px;
+footer nav.social.media a {
+    display: inline-block;
+}
+
+footer nav.social.media a img {
+    width: 32px;
     height: auto;
+    display: block;
 }
 
 /* Additional rafting.css styles can be added below */
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 30px;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--gold);
+    background-color: #f9f9f9;
+}
+
+header img {
+    max-height: 70px;
+    width: auto;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--heading-font);
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--gold);
+    color: white;
+    outline: none;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.adventures figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
