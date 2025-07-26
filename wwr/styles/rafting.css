@@ -1,0 +1,47 @@
+:root {
+    --dark-blue: #251d67;
+    --gold: #edad4a;
+    --blue: #3993b0;
+    --gray: #5c5d67;
+    --body-font: 'Ubuntu', sans-serif;
+    --heading-font: 'Lato', sans-serif;
+    --primary-color: var(--dark-blue);
+    --accent1-color: var(--gray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 24px;
+    height: auto;
+}
+
+/* Additional rafting.css styles can be added below */
