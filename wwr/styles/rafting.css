@@ -7,6 +7,7 @@
     --heading-font: 'Lato', sans-serif;
     --primary-color: var(--dark-blue);
     --accent1-color: var(--gray);
+    --accent2-color: var(--gold);
 }
 
 * {
@@ -52,6 +53,10 @@ footer nav.social.media a img {
     display: block;
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
+
 /* Additional rafting.css styles can be added below */
 
 header {
@@ -61,7 +66,80 @@ header {
     column-gap: 30px;
     padding: 10px 0;
     border-bottom: 2px solid var(--gold);
-    background-color: #f9f9f9;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.95;
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+main {
+    margin-top: 90px;
+}
+
+.hero {
+    position: relative;
+    padding: 20px;
+    color: white;
+    z-index: 1;
+    height: 50vh;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+    border: 2px solid var(--gold);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-top: 5px;
+}
+
+.hero {
+    position: relative;
+    padding: 20px;
+    color: white;
+    z-index: 1;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.hero article {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    width: 300px;
 }
 
 header img {
@@ -75,6 +153,8 @@ nav {
     justify-content: flex-end;
     gap: 25px;
     margin-right: 10px;
+    position: relative;
+    z-index: 1100;
 }
 
 nav a {
@@ -85,6 +165,8 @@ nav a {
     padding: 8px 12px;
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 1100;
 }
 
 nav a:hover,
@@ -118,4 +200,55 @@ nav a:focus {
     font-weight: 600;
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.hero article {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+
+.hero article img {
+    border: 2px solid var(--gold);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-top: 5px;
 }
