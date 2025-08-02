@@ -286,3 +286,96 @@ h1 {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     margin-top: 5px;
 }
+
+/* Employee profiles styles */
+.employee-profiles {
+    margin: 30px 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-grid figure {
+    text-align: center;
+    margin: 0;
+}
+
+.profile-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Comment form styles */
+.comment-form {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.comment-form h2 {
+    margin-bottom: 15px;
+}
+
+.comment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.comment-form textarea {
+    resize: vertical;
+}
+
+.comment-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.comment-form button:hover {
+    background-color: var(--gold);
+}
+
+/* Wireframe link in footer */
+footer p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
